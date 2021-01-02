@@ -1,11 +1,14 @@
 {
+  "homepage":"http://ashahr001.github.io/CrowdCoins",
   "name": "crowdcoins",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "mocha",
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build"
   },
   "author": "",
@@ -15,6 +18,7 @@
     "ganache-cli": "^6.12.1",
     "mocha": "^8.2.1",
     "next": "^4.1.4",
+    "next-routes": "^1.4.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "semantic-ui-css": "^2.4.1",
